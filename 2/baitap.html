@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="clearfix">
+        <ul class="clearfix">
+          <li><a href="#">Trang chủ</a></li>
+          <li>
+              <a href="#">Đào tạo</a>
+              <ul class="sub-menu">
+              <li><a href="#">Đồ họa</a></li>
+              <li><a href="#">Web</a></li>
+              <li><a href="#">Mạng</a></li>
+              </ul>
+              </li>
+              <li><a href="#">Dịch vụ</a></li>
+              <li><a href="#">Liên hệ</a></li>
+          </ul>
+        <a href="#" id="pull"><i class="fas fa-bars"></i></a>
+    </nav>
+</body>
+<script>
+    $(document).ready(function() {
+    $('#pull').click(function() {
+      $('nav ul').toggleClass('show');
+    });
+  });
+</script>
+</html>
